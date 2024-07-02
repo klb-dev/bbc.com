@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* navigation bar */
+
+header {
+    height: 45px;
+    background: black;
+    padding: 1em;
+}
+
+nav * {
+    float: left;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 2em;
+    padding-left: 3em;
+}
+
+nav ul li {
+    padding: 0 1.5em;
+    margin-left: 1em;
+    border-left: 1px solid white;
+}
+
+nav ul li:last-child{
+    border-right: 1px solid white;
+
+}
+
+nav select,
+option {
+    background-color: black;
+    border: none;
+}
+
+.fa-user{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .2rem;
+    margin-left: 2em;
+    margin-right: 1em;
+    font-size: .625rem;
+}
+
+form input[type="text"]{
+    position: relative;
+    margin-left: .5em;
+    text-indent: 1em;
+    width: 100%;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    top: 19px;
+    right: 9.5em;
+    color: black;
+}
+
+
+/* main layout */
+main {
+    margin-left: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+main div + div > h2 {
+    float: right;
+    color: lightgrey;
+    margin-right: 1em;
+}
+
+main > div {
+    float: left;
+    width: 50%;
+}
+
+main > div > img {
+    clear: left;
+    width: 100%;
+    margin-right: 1em;
+}
+
+
+main div + div > div{
+    float: right;
+
+}
+
+main div + div img {
+    width: 48%;
+    margin-left: .5em;
+}
+
+/* section layout */
+
+section {
+    margin-left: 1em;
+}
+
+section h2 {
+    border-left: 5px solid red;
+    padding-left: .5em;
+}
+
+section div {
+    float: left;
+    width: 33%;
+}
+
+section div img {
+    width: 80%;
+}
+
+section div h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 70%;
+    margin-bottom: .5em;
+}
+
+section div p {
+    font-size: .875rem;
+    width: 60%;
+    margin-bottom: .5em;
+}
+
+section div h4 {
+    font-weight: bold;
+    border-left: 3px solid red;
+    padding-left: .5em;
+    margin-bottom: 1em;
+}
